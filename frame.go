@@ -17,6 +17,8 @@ type Frame struct {
 
 type Kind uint8
 
+const dataLength = 64
+
 const (
 	SFF Kind = iota // Standard frame format
 	EFF             // Extended frame format
@@ -30,6 +32,6 @@ const frameSize = unsafe.Sizeof(
 		ID   uint32
 		Len  byte
 		_    [3]byte
-		Data [8]byte
+		Data [dataLength]byte
 	}{},
 )
