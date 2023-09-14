@@ -1,4 +1,4 @@
-module github.com/go-daq/canbus
+module github.com/brushknight/canbus
 
 go 1.18
 
